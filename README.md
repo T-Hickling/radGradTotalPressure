@@ -15,8 +15,6 @@ Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`.
 
 - [ ] Add support for general rotation axes (currently limited to z-axis rotation only).
 
-- [ ] Calculate radial equilibrium instead of passing in `dp0dr`.
-
 ## Usage
 
 Tell OpenFOAM to dynamically link the library by including
