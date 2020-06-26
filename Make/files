@@ -1,5 +1,5 @@
 fvPatchFields = fields/fvPatchFields
 derivedFvPatchFields = $(fvPatchFields)/derived
-$(derivedFvPatchFields)/rotEqTotalPressure/radEqTotalPressureFvPatchScalarField.C
+$(derivedFvPatchFields)/radGradTotalPressure/radGradTotalPressureFvPatchScalarField.C
 
-LIB = $(FOAM_USER_LIBBIN)/libradEqTotalPressureFvPatchScalarField
+LIB = $(FOAM_USER_LIBBIN)/libradGradTotalPressureFvPatchScalarField
