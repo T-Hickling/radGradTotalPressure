@@ -11,6 +11,8 @@ Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`.
 
 ## TODO
 
+- [ ] Rename and refactor `.C` and `.h` files to use radGrad instead of radEq.
+
 - [ ] Set up test cases and testing with github actions.
 
 - [ ] Add support for general rotation axes (currently limited to z-axis rotation only).
