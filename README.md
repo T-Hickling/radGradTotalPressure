@@ -1,5 +1,5 @@
-# radEqTotalPressure
-Radial equilibrium total pressure boundary condition for OpenFOAM. 
+# radGradTotalPressure
+Total pressure boundary condition with user-specified radial gradient for OpenFOAM. 
 Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`. 
 (https://github.com/OpenFOAM/OpenFOAM-7/tree/master/src/finiteVolume/fields/fvPatchFields/derived/rotatingTotalPressure)
 
@@ -24,7 +24,7 @@ Tell OpenFOAM to dynamically link the library by including
 ```
 libs
 (
-    "libradEqTotalPressureFvPatchScalarField.so"
+    "libradGradTotalPressureFvPatchScalarField.so"
 );
 ```
 
@@ -35,7 +35,7 @@ In the file `<MY_CASE>/0/p` or `<MY_CASE>/0/p_rgh`, the boundary condition can b
 ```
 <PATCH_NAME>
 {
-    type            radEqTotalPressure;
+    type            radGradTotalPressure;
     p0              uniform 100000;
     rRef            0.1;
     dp0dr           1000;
